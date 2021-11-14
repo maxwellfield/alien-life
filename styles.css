@@ -1,0 +1,82 @@
+/* Font Call-in */
+@font-face{
+    font-family: 'MuseoSans_500';
+    src: url('MuseoSans_500-webfont.woff') format('woff');
+}
+
+body {
+    background: #000000;
+    color: #FFFFFF;
+    font-family: 'MuseoSans_500', Arial, sans-serif;
+}
+h1 {
+    background-image: url(mars.jpg);
+    background-size: 100% 100%;
+    font-size: 4rem;
+    line-height: 1;
+    padding-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+span {
+    display: block;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+h2 {
+    margin-left: 1.5rem;
+}
+blockquote {
+    border-top: 0.5rem solid #FFFFFF;
+    border-bottom: 0.5rem solid #FFFFFF;
+    font-size: 1.5rem;
+    float: left;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 25%;
+}
+figure {
+    border-bottom: 0.5rem solid #FFFFFF;
+    float: right;
+    margin-left: 2rem;
+    width: 25%;
+}
+img {
+    width: 100%;
+}
+figcaption {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    blockquote, figure {
+        width: 75%;
+    }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    blockquote, figure {
+        width: 50%;
+    }
+}
